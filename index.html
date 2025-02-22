@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Telecalling System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">TELECALLER</div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Smart Telecaller System</h1>
+            
+            <!-- Add the image here -->
+            <div class="hero-app-preview" data-aos="fade-up" data-aos-delay="200">
+                <img src="image/telecaller_preview.jpg" alt="Telecaller App Preview">
+            </div>
+            
+            <p>AI-powered calling solution</p>
+            <div class="hero-buttons">
+                <button class="cta-button">Get Started</button>
+                <button class="wd-button" onclick="openDemoVideo()">Watch Demo</button>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+            <img src="https://via.placeholder.com/500x400" alt="Telecaller Dashboard">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 data-aos="fade-up">About Us</h2>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <h3>Why Choose Telecaller?</h3>
+                <p>We provide cutting-edge solutions for telecallers and marketing managers to optimize their calling operations and track performance effectively.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Smart Dialing System</h4>
+                        <p>Integrated dialing system with automatic call logging and feedback collection</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Performance Tracking</h4>
+                        <p>Track telecaller performance with detailed analytics on calls, feedback, and conversion rates</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-check"></i>
+                        <h4>Manager Dashboard</h4>
+                        <p>Comprehensive dashboard for managers to monitor team performance and customer feedback</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats" data-aos="fade-left">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h4>1000+</h4>
+                    <p>Active Users</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>1M+</h4>
+                    <p>Calls Managed</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>98%</h4>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this after About section -->
+    <section id="impact" class="impact-section">
+        <h2 data-aos="fade-up">Our Impact</h2>
+        <div class="impact-container">
+            <div class="impact-card" data-aos="fade-right">
+                <h3>Before TELECALLER</h3>
+                <ul>
+                    <li>Manual call tracking</li>
+                    <li>Inconsistent follow-ups</li>
+                    <li>Limited performance insights</li>
+                    <li>No real-time monitoring</li>
+                    <li>20% conversion rate</li>
+                </ul>
+            </div>
+            
+            <div class="impact-arrow" data-aos="zoom-in">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="impact-card" data-aos="fade-left">
+                <h3>After TELECALLER AN7/green-check-mark-icon-in-a-circle-tick-symbol-in-green-color-2ABNAN7.jpg</h3>
+                <ul>
+                    <li>Automated call logging</li>
+                    <li>Systematic follow-up system</li>
+                    <li>Detailed analytics dashboard</li>
+                    <li>Real-time performance tracking</li>
+                    <li>60% conversion rate</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 data-aos="fade-up">Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card" data-aos="zoom-in">
+                <i class="fas fa-headset"></i>
+                <h3>Smart Dialer</h3>
+                <ul class="feature-list">
+                    <li>One-click calling system</li>
+                    <li>Automatic call logging</li>
+                    <li>Real-time call status tracking</li>
+                    <li>Instant feedback collection</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Analytics Dashboard</h3>
+                <ul class="feature-list">
+                    <li>Comprehensive call statistics</li>
+                    <li>Performance metrics tracking</li>
+                    <li>Conversion rate analysis</li>
+                    <li>Custom report generation</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-tasks"></i>
+                <h3>Task Management</h3>
+                <ul class="feature-list">
+                    <li>Automated call scheduling</li>
+                    <li>Follow-up reminders</li>
+                    <li>Task prioritization</li>
+                    <li>Team performance monitoring</li>
+                </ul>
+            </div>
+
+            <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Security Features</h3>
+                <ul class="feature-list">
+                    <li>End-to-end call encryption</li>
+                    <li>Secure data storage</li>
+                    <li>Role-based access control</li>
+                    <li>Compliance monitoring</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team/Testimonials Section -->
+    <section id="team" class="team-section">
+        <h2 data-aos="fade-up">Meet Our Team</h2>
+        <p class="section-subtitle" data-aos="fade-up">The minds behind TELECALLER's innovation</p>
+        <div class="founders-container">
+            <div class="founder-card" data-aos="fade-right">
+                <div class="founder-image">
+                    <img src="image/founder.jpg" alt="Aleem Shaik - Founder" class="founder-img">
+                </div>
+                <div class="founder-content">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial">Building our website with Hostinger Website Builder was user-friendly and as easy as getting ready to play cricket.</p>
+                    <h3 class="founder-name">Aleem Shaik</h3>
+                    <p class="founder-title">Founder</p>
+                    <p class="founder-company">CROXTON</p>
+                </div>
+            </div>
+
+            <div class="founder-card" data-aos="fade-left">
+                <div class="founder-image">
+                    <img src="image/cofounder.jpg" alt="Rafi Shaik - Co-Founder" class="founder-img">
+                </div>
+                <div class="founder-content">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial">Our telecaller operations transformed completely after implementing this solution. The efficiency and automation have revolutionized how we handle customer interactions.</p>
+                    <h3 class="founder-name">Rafi Shaik</h3>
+                    <p class="founder-title">Co-Founder</p>
+                    <p class="founder-company">CROXTON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include the existing panels but hidden by default -->
+    <div id="telecallerPanel" class="panel">
+        <h2>Telecaller Panel</h2>
+        <div class="dialpad">
+            <input type="tel" id="phoneNumber" placeholder="Enter phone number">
+            <button onclick="makeCall()">Call</button>
+        </div>
+    </div>
+
+    <div id="feedbackForm" class="panel">
+        <h2>Call Feedback</h2>
+        <div class="feedback-options">
+            <button onclick="submitFeedback('interested')">Interested</button>
+            <button onclick="submitFeedback('callback')">Callback</button>
+            <button onclick="submitFeedback('not_interested')">Not Interested</button>
+        </div>
+    </div>
+
+    <div id="managerPanel" class="panel">
+        <h2>Manager Dashboard</h2>
+        <div class="stats">
+            <div id="callStats"></div>
+        </div>
+    </div>
+
+    <!-- Add this before the Contact section -->
+    <section id="reviews" class="reviews-section">
+        <h2 data-aos="fade-up">What Our Users Say</h2>
+        <div class="reviews-container">
+            <!-- Review Slider -->
+            <div class="review-slider">
+                <!-- Review Card 1 -->
+                <div class="review-card" data-aos="fade-up">
+                    <div class="review-header">
+                        <img src="image/reviewer.jpg" alt="Shreyash Pandey" class="reviewer-image">
+                        <div class="reviewer-info">
+                            <h3>Shreyash Pandey</h3>
+                            <p>Founder of Ethereal Corporate Network</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">Unlike the previous web hosts we've tried, Hostinger's user experience was much less complicated. Its hPanel is easy to use, and the response time is fast. I don't need to train my team members on how to navigate it because everyone can learn it by themselves.</p>
+                    <a href="#" class="read-more">Read the full story</a>
+                </div>
+
+                <!-- Review Card 2 (Duplicate for more reviews) -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Similar structure with different content -->
+                </div>
+
+                <!-- Review Card 3 (Duplicate for more reviews) -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Similar structure with different content -->
+                </div>
+            </div>
+
+            <!-- Slider Navigation Dots -->
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Contact Section before the closing body tag -->
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Business Street, Tech City, 12345</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 234 567 8900</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>contact@telecaller.com</p>
+                </div>
+            </div>
+            <form class="contact-form" data-aos="fade-left">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Add this after the contact section -->
+    <footer class="footer">
+        <div class="copyright">
+            <i class="far fa-copyright"></i> 2025 TELECALLER. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
